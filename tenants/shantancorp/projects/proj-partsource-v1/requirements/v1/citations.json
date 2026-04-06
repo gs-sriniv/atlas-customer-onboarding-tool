@@ -1,0 +1,54 @@
+{
+  "company": {
+    "company_description": "PartsSource (Remi Group) provides medical equipment maintenance and protection programs to healthcare facilities.",
+    "total_customers": "Total Customers (#)  ~4,000+ (policy-level; accounts can hold multiple policies)",
+    "total_revenue": "Total Contract / Revenue Value ($)  $120M (total services renewals managed by team)",
+    "grr_nrr": "GRR / NRR  ~80-82% GRR (current), 85% target",
+    "team_size": "Total Team Size (FTEs)  10 (full portfolio; 3 REMI-specific FTE + Taylor). OP360 team in Philippines handing operational updates.",
+    "primary_use_case": "Primary Use Case for Atlas  Renewal agent for sub-$20K equipment protection agreements (Remi Group business line)"
+  },
+  "segments": {
+    "segments": "Segment Name: REMI Long Tail: Policies with annual premium under $20K — managed by customer service team; ~1,500 accounts; ~$20M revenue; Yes agent coverage for automated renewal outreach.\nREMI Enterprise: Policies $20K and above; remainder of 4,000+; ~$100M; No agent coverage (MVP)."
+  },
+  "value": {
+    "pain": "The REMI renewal team cannot engage ~1,500 long-tail accounts proactively. Outreach begins at T-60 to T-30 instead of the ideal T-180. Prior to late 2024, just 3 people managed ~3,400 renewals; capacity constraints make earlier engagement operationally impossible without automation.",
+    "root_cause": "Manual processes, a small team, and four disconnected data systems (REMI Salesforce, Polaris, Access database, Gainsight CS) make structured early outreach impossible at scale.",
+    "consequence": "On-time renewal rates sit at ~55% across the full portfolio (target: 70–80%), and GRR is ~80–82% against a target of 85% representing material retention risk on a $20M long-tail book. 48% of annual churn is controllable.",
+    "future_state": "Deploy Atlas to run a structured, multi-touch outreach sequence beginning at T-180, following the confirmed 4-stage methodology (Expressed Interest → Solution Scoping → Solution Proposal → Contracting), enabling 100% methodology compliance and freeing the team.",
+    "leading_indicators": "First outreach triggered at T-180 for 100% of REMI long-tail accounts; structured cadence through T-30; escalations categorized and routed to the correct team (Sales, Pricing, Legal, Billing) within defined SLAs.",
+    "success_criteria": "Improve GRR on REMI segment from ~80% to 85%; Increase on-time renewal rate from ~55% to 70–80%; Achieve 100% renewal methodology compliance (structured outreach beginning at T-180)."
+  },
+  "current": {
+    "renewal_workflow": "Today, the REMI renewal process is compressed into a 60–30 day pre-renewal window, driven by two procurement workflows: PO-based customers: Outreach triggered 60 days before renewal. The team sends the renewal agreement by email, then follows up every 2–3 weeks, including phone calls and contact searches when customers are unresponsive. Auto-renew customers: 30 days advance notice. Renewal notification sent; registers automatically unless the customer declines.",
+    "core_systems": "Core systems in use: Salesforce (Remi instance), Polaris (contract/premium source of truth), EMMA (dispatch/service), Access staging DB (renewal processing queue), Renewal Queen (Access DB template tool), Power BI (NPS/CSAT dashboards)",
+    "pain_points": "Quotes arrive very late (3 weeks to 1 month before effective date) due to upstream bottlenecks. Contact data has 6-9 duplicate versions per contact with no 1:1 mapping. No early-stage outreach process for sub-$20K. Shared inbox creates double-response risk.",
+    "working_well": "What is working well today: High CSAT (4.8/5.0 avg). 24x7x365 dispatch. 5,000+ vendor network. Strong service delivery reputation. Renewal Queen tool provides consistent template-based communication.",
+    "churn_triggers": "When are customers most likely to churn? When they are unresponsive and coverage lapses without a PO. When price increases exceed 10% without early communication. When service quality issues go unaddressed during the renewal window.",
+    "risks": "Exception accounts (NYS, NYC, CNA, USPI, Fed, OSU, K-12). Multiple data systems disconnected. Contact data has 6-9 duplicate versions per contact. Multi-policy account routing needed. Quotes arrive very late (3 weeks to 1 month)."
+  },
+  "journey": {
+    "journey_steps": "Each step in Agent Journey Matrix details timing, trigger, channel, action, and success metrics from T-180 through T+60 with specific outreach actions and success signals."
+  },
+  "replies": {
+    "reply_categories": "Reply Categories and Handoff Matrix  |  PartsSource / Remi Group\nWhen and how the agent hands off to humans.  Reply Category, Priority, Agent Instructions, Handoff? columns listing categories and handoff instructions.",
+    "handoff_scenarios": "Escalation Matrix\nSituation, Priority, Who Handles It, Response Time, How We'll Transfer columns detailing escalation triggers and assigned teams. Response time listed as TBD for all."
+  },
+  "guardrails": {
+    "will_do": "Agent Will Do: Send proactive renewal notification emails, Make proactive phone calls to unresponsive contacts, Answer FAQs from knowledge base, Share standard documentation, Schedule follow-up, Update CRM, Send confirmations, CC Account Manager, Route equipment add/delete requests, Attempt alternate contacts",
+    "will_not_do": "Agent Will Not Do: Negotiate pricing or discounts, Modify contract terms, Make product roadmap commitments, Handle payment or billing, Access sensitive data, Override protocols, Process refunds or delete data, Approve back-dates >1 month or large deletes >$10K, Send renewals for exception accounts without review"
+  },
+  "comms": {
+    "voice_style": "Communication style (e.g. professional, consultative, casual) Consultative, professional. Uses AACA framework for complaints (Acknowledge, Clarify, Address, Confirm). Phrases to avoid Do not name competitors. Do not reference specific invoice amounts. Do not provide legal guidance. Team agreed to be transparent about AI agent when asked by customer Confirmed in discovery",
+    "channels": "EMAIL From email address customerservice@theremigroup.com (shared inbox) Reply handling Replies go to shared inbox. Protocol for coordination between agent and 3-person CS team TBD. Voice channel not yet confirmed for sub-$20k; may be Phase 2. Call recording (Yes / No) TBD. Voicemail approach Attempt voicemail + email. Caller ID display TBD",
+    "contact_targeting": "Who should the agent reach out to? 1-3 contacts per renewal from Salesforce opportunity contact roles. Contact email + name (Salesforce opportunity contact roles, 1-3 contacts per renewal). What if the contact is wrong? Attempt to identify correct contact via SF, Polaris, EMMA, prior dispatch tickets, prior year PO sender. What if the contact is unresponsive? Attempt alternate contacts (procurement, purchasing, financial). Multi-threading: CC Account Manager on 2nd+ follow-ups. For >$25K engage management.",
+    "templates": "Renewal Queen (Access DB template tool) uses 5 template variants (auto-renew, PO needed, PO+vendor restriction, PO+item non-renewal, PO+price increase >10%). T-180 and T-120 outreach: PLACEHOLDER until talk tracks and templates provided. Taylor to share 5 email templates from Renewal Queen. Phone scripts: Voice outreach scope TBD. Sub-$20K renewals resolved more via email; voice Phase 2."
+  },
+  "data": {
+    "data_sources": "Core systems in use: Salesforce (Remi instance), Polaris (contract/premium source), Access staging DB, Renewal Queen (Access DB), Power BI (NPS/CSAT dashboards)  No unique identifier currently links REMI Salesforce, Polaris, Access DB, and Gainsight CS. MVP will use flat file approach.",
+    "compliance": "Legal review of AI-initiated outreach is a prerequisite; team agreed to be transparent about AI agent when asked; data retention and PII handling TBD; customer consent process TBD; call recording consent required; do-not-call list access pending; shared inbox coordination TBD."
+  },
+  "roi": {
+    "impact_projection": "Lagging outcome: Improve GRR from ~80% to 85%. Increase on-time renewal rate from ~55% to 70–80%. Achieve 100% renewal methodology compliance (structured outreach beginning at T-180).",
+    "roi_inputs": "GRR / NRR: ~80-82% GRR (current); 85% GRR (target); Time to process one renewal (hours): Not tracked; Total contract / revenue value in scope: ~$20M; Avg. cost per team member (fully loaded): TBD."
+  }
+}
