@@ -1,0 +1,1014 @@
+ATLAS RENEWAL AGENT
+
+Implementation Requirements
+
+PartsSource
+
+ 
+
+Executive Summary
+
+Company Overview
+
+PartsSource is a leading provider of mission-critical healthcare equipment parts, services, and intelligence. A 10-person services team currently manages $120M in annual renewals across 4,000+ accounts in the REMI portfolio. This initiative focuses on the long-tail segment (policies under $20k)  approximately 1,500 accounts representing ~$20M in ARR  where structured, proactive renewal engagement does not currently exist.
+
+ 
+
+Total customers (#): 4,000+ (policy-level; accounts can hold multiple policies)
+
+Total contract / revenue value: $120M (total services renewals managed by team)
+
+GRR / NRR: ~80–82% GRR (current) 85% (target)
+
+Total team size (FTEs): 10 (full portfolio; REMI-specific FTE count TBD  confirm with team
+
+ 
+
+Segment Definitions
+
+Segment Name
+
+How Do You Define It?
+
+Count of Customers
+
+Revenue
+
+Use Agent?
+
+REMI Long Tail
+
+Policies (individual contracts) with annual premium under $20k  managed by customer service team
+
+~1,500 accounts (policy-level count TBD)
+
+~$20M
+
+Yes
+
+REMI Enterprise
+
+Policies with annual premium $20k and above  managed by sales reps
+
+Remainder of 4,000+
+
+~$100M
+
+No (MVP)
+
+How will we filter accounts/contacts for the MVP?
+
+
+
+⚠  Note: The $20k threshold is defined at the policy level, not the account level. An account can hold policies on both sides of the threshold and receive different engagement models for each. Brad  noted this creates a customer experience gap where a customer may receive outreach from both the agent and a sales rep for different policies. This is an open design decision for the team to resolve before pilot launch. The above reflects confirmed information from March 9, 2026.
+
+ 
+
+ 
+
+How Are Renewals Managed by Segment?
+
+Segment Name
+
+Renewal Workflow
+
+Systems Used
+
+REMI Long Tail (< $20k)
+
+Fully manual, compressed into 60–30 day pre-renewal window. Customer service team owns outreach, follow-up, and renewal execution.
+
+REMI Salesforce, Polaris, Access database (via Op360 for manual process support)*see suggested filters in data section
+
+REMI Enterprise (≥ $20k)
+
+Sales rep-owned. Sales team receives CC on renewal outreach. Rep manages relationship and renewal close.
+
+REMI Salesforce, Polaris
+
+ Roughly 50-100 customers have multi-policies that span sub and above $20K. Justin to confirm
+
+ 
+
+Project Overview
+
+PartsSource is deploying the Atlas Renewal Agent to automate and scale renewal engagement across the REMI long-tail segment of approximately 1,500 accounts with policies under $20k. The current process reaches customers only 30–60 days before renewal, leaving no time to address service issues, pricing concerns, or contact changes. The goal is to replicate the structured renewal methodology used for the enterprise segment at the scale the long tail requires.
+
+ 
+
+Current State
+
+Today, the REMI renewal process is compressed into a 60–30 day pre-renewal window, driven by two procurement workflows:
+
+PO-based customers: Outreach triggered 60 days before renewal. The team sends the renewal agreement by email with follow-up every 2–3 weeks, including phone calls and contact searches when customers are unresponsive.
+
+Auto-renew customers: Notification sent 30 days before renewal. Less active engagement  the renewal registers automatically unless the customer declines.
+
+“Renewal Queen” generates 5 email template variants based on: PO requirement, pricing changes (if over 10–15%), vendor restrictions, non-renewal items, and auto-renewal status.
+
+
+
+Renewal quote workflow: Pricing generates quote in Polaris, which moves into a staging Access database. Account Services processes these weekly. Customer Service then receives a notification email and updates the Salesforce opportunity, then uses the Renewal Queen to generate the customer email. Quotes are arriving very late (3 weeks to 1 month before effective date) due to upstream bottlenecks.
+
+The PO/auto-renew flag is captured as a checkbox field in Polaris. Prior to October 2024, the REMI customer service team was just 3 people managing ~3,400 renewals per year. The customer service team works exclusively in Salesforce (REMI instance), they have no access to Gainsight today. Emails are manually uploaded to the Salesforce file section for record-keeping (drag-and-drop, not an activity timeline feed). The team also uses Op360 (an outside vendor) to assist with some manual renewal processes.
+
+ 
+
+Key current-state metrics:
+
+On-time renewal rate (2025): ~55% across the full portfolio.  Target 75%
+
+Controllable churn: ~48% of annual churn is controllable, driven by late or missed engagement; 52% uncontrollable (OEM pricing gaps, federal/state budget cuts)
+
+Renewal volume: ~3,400 policies per year across the full REMI portfolio
+
+Early warning signals: Gut instinct, team collaboration, and spot audits. New situations arise weekly.
+
+
+
+ 
+
+Value Statement and Priorities
+
+
+
+Current operational pain: The REMI renewal team cannot engage ~1,500 long-tail accounts proactively. Outreach begins at T-60 to T-30 instead of the ideal T-180. Prior to late 2024, just 3 people managed ~3,400 renewals; capacity constraints make earlier engagement operationally impossible without automation.
+
+
+
+Root cause: Manual processes, a small team, and four disconnected data systems (REMI Salesforce, Polaris, Access database, Gainsight CS) make structured early outreach impossible at scale.
+
+
+
+Business consequence: On-time renewal rates sit at ~55% across the full portfolio (target: 70–80%), and GRR is ~80–82% against a target of 85%  representing material retention risk on a $20M long-tail book. 48% of annual churn is controllable.
+
+
+
+Future state: Deploy Atlas to run a structured, multi-touch outreach sequence beginning at T-180, following the confirmed 4-stage methodology (Expressed Interest → Solution Scoping → Solution Proposal → Contracting), enabling 100% methodology compliance and freeing the team for higher-value customer work.
+
+
+
+Leading indicators: First outreach triggered at T-180 for 100% of REMI long-tail accounts; structured cadence through T-30; escalations categorized and routed to the correct team (Sales, Pricing, Legal, Billing) within defined SLAs.
+
+
+
+Lagging outcome: 
+
+Improve GRR on REMI segment from ~80% to 85%
+
+Increase on-time renewal rate from ~55% to 70–80%
+
+Achieve 100% renewal methodology compliance (structured outreach beginning at T-180)
+
+ 
+
+Additional priorities:
+
+Transform REMI renewal management to free capacity for high-value customer engagement
+
+Provide sales reps with a visibility dashboard into long-tail renewal conversations  even though reps are not compensated on sub-$20k policies, every dollar retained matters to their account-level growth story
+
+
+
+ 
+
+Anticipated Challenges
+
+Data fragmentation: Four disconnected systems (REMI Salesforce, Polaris, Access database, Gainsight CS) with no shared unique identifier, unless there is a common Polaris Id. The policy/agreement number in Salesforce is a candidate mapping key to Polaris. MVP may need to use a flat file approach unless otherwise agreed upon. 
+
+Impact: A common identifier is required to guide the agent properly 
+
+Tech transformation dependency: PartsSource is undergoing a tech transformation with messy data spread across multiple systems and timeline is TBD with no committed date. Elana cautioned on 3/19 that building connectors to legacy SF would 'massively expand scope.'; MVP design must minimize future rebuild cost.
+
+Impact: It will be difficult to decide on a proper workflow for the agent without a system of record to write back to. 
+
+Contact data quality: Email addresses and decision-maker contacts may not be current for the long-tail segment, especially for decentralized university and government accounts. Contact data quality: 6–9 duplicate contact versions across systems. Consolidation project underway with no one-to-one mapping (ratios as high as 20:1). Contact IDs will change post-migration.
+
+Impact: The agent may not be able to reach as many accounts as desired without key contacts identified. 
+
+Escalation Routing: The agent will need explicit routing instructions: pricing requests go here, service complaints go there, legal questions go somewhere else.
+
+Impact: Without routing instructions, the agent will not streamline processes and followup across the organization.
+
+Multi-policy account routing: Accounts with policies on both sides of the $20k threshold need routing logic to prevent the agent and a sales rep contacting the same customer simultaneously. Brad flagged this as a priority design decision before pilot launch.
+
+Impact: Without clarity on this, we risk confusing the customer with duplicative outreach.
+
+Shared inbox double-response risk: Agent (potentially) and 3-person CS team both monitoring customerservice@theremigroup.com. 
+
+Impact: Miscommunications or lack of coordination if unresolved.
+
+Day-one pipeline state: When agent launches, customers will be at every stage (T-45, T-30, expired). Agent needs triage logic for mid-sequence entry.
+
+
+
+ 
+
+ 
+
+ROI Inputs
+
+Input
+
+Value
+
+Total customers in scope
+
+~1,500 accounts (policy-level count TBD)
+
+Total contract value in scope
+
+~$20M
+
+GRR of selected segment
+
+~80% current; 85% target
+
+Total team size (FTEs)
+
+10 (full portfolio; REMI-specific split TBD)
+
+Segment definition
+
+Policies under $20k annual premium, managed by customer service team
+
+Avg. cost per team member (fully loaded)
+
+TBD  confirm with team
+
+Annual customer interactions (emails + calls)
+
+TBD  confirm with team
+
+Time to process one renewal (hours)
+
+TBD  confirm with team
+
+Current email response rate
+
+TBD  no benchmarks tracked today
+
+Current call response rate
+
+TBD  no benchmarks tracked today
+
+ 
+
+📋  Open Questions  ROI and Business Case
+
+•  What is the fully loaded annual cost for a team member on the REMI renewals side? This is the single biggest lever in the ROI model.
+
+•  How much time does the team spend on a typical REMI renewal start to finish  prep, outreach emails, calls, follow-up, and execution?
+
+•  Email and call response rates are not tracked today. Should we use industry benchmarks as proxies for the ROI model, or defer until we have pilot data?
+
+•  What is the on-time renewal rate specifically for the sub-$20k segment? The 55% figure is across the full portfolio  the long-tail number may be lower given the capacity constraints. (Justin Bellinger to pull)
+
+ 
+
+
+
+ 
+
+Customer Journey and Workflow
+
+Current State
+
+ 
+
+The long-tail segment receives no structured outreach before the 60 day-window (see exec summary for additional detail). At-risk accounts are identified by gut instinct at renewal time. Service delivery issues that damage customer sentiment months before renewal are typically discovered at T-60,  too late to remediate.
+
+The renewals typically fill during quarterly cohorts: 1/1, 4/1, 7/1 (largest), 10/1.
+
+ 
+
+When customers are most at risk of churn:
+
+Service delivery issues that went unresolved and surface at renewal
+
+Contact has changed and outreach reaches the wrong person
+
+No proactive communication in the preceding 90+ days
+
+Federal/state government procurement cycles (e.g., state of New York, California) that require months of lead time
+
+
+
+The Remi-Implementation-Team Notebook.pdfholds many best practices and internal goals that an agent should leverage while engaging with a customer. 
+
+ 
+
+Core Systems
+
+System
+
+Role
+
+Notes
+
+REMI Salesforce
+
+Accounts, contacts, opportunities (renewal baseline records)
+
+Separate instance from the Gainsight-connected PartsSource Salesforce. Opportunities are placeholders  actual financials live in Polaris. Not connected to Gainsight CS.
+
+Polaris
+
+Core ERP  renewal financial data, contract timelines, PO/auto-renew checkbox, invoicing
+
+Source of truth for premiums and contract terms. Legacy system  historically difficult to integrate. Renewal quote created here by pricing team.
+
+Access database
+
+Renewal quotes generated by pricing team; feeds to account services for Polaris setup
+
+Intermediate step in the quote-to-renewal workflow
+
+Gainsight CS
+
+Currently connected to a different Salesforce instance (not REMI)
+
+Not used by the REMI customer service team. Will eventually connect to new unified Salesforce post-tech transformation.
+
+Power BI
+
+NPS and CSAT dashboard
+
+Separate from the renewal workflow; SLA tracking location TBD
+
+ 
+
+⚠  Note: No unique identifier currently links REMI Salesforce, Polaris, the Access database, and Gainsight CS. The policy/agreement number in Salesforce opportunities is a candidate mapping key to Polaris records. Annual premium values and living policy changes (adds/deletes) are in Polaris only  not reflected in Salesforce. The MVP will use a flat file approach. Full API integration is contingent on the tech transformation timeline.
+
+ 
+
+ 
+
+Your Ideal Customer Journey
+
+The desired renewal methodology, as described in our March 9 session, is a structured 4-stage engagement sequence (currently used for the enterprise segment but not operationalized for the long tail):
+
+See Renewal Journey Matrix for more details
+
+
+
+Ideal Agentic Renewal Sequence
+
+The sequence below reflects the desired methodology described in our March 9 session. Channel selection, message content, and specific success measures are to be confirmed in the next communication workshop.
+
+
+
+Illustrative (See Renewal Journey Matrix for latest details)
+
+
+
+Stage
+
+Timeline
+
+Agent Role
+
+Team Role
+
+Success Measure
+
+Expressed Interest
+
+T-180
+
+Sentiment check, acknowledge renewal, invite equipment change flags. No pricing. Email.
+
+Monitor escalation queue.
+
+Customer reply or intent signal
+
+Solution Scoping
+
+T-120
+
+Update timeline. Confirm next steps or try new angle. Surface adds/deletes. Escalate pricing/discount requests.
+
+Account Services registers renewal.
+
+Reply rate; risk signal captured
+
+Solution Proposal
+
+T-90/T-60/T-30
+
+Deliver renewal agreement using Renewal Queen templates. BCC Account Services for auto-renews.
+
+Handle escalated questions. CC AM on follow-ups.
+
+PO submission rate
+
+Reminder
+
+T-60
+
+Reiterate details, create urgency. CC AM.
+
+Route price pushback to Pricing.
+
+Reply rate; PO rate
+
+Contracting
+
+T-30
+
+Final notification. Agent hands off at T-31.
+
+Human engagement from T-30. >$25K stays open for management review.
+
+PO/signature rate
+
+
+
+Renewal Ratings Scale (captured in SFDC): 4 = PO imminent or strong signals  |  3 = 75–100% likely, active engagement  |  2 = 50/50, discussions ongoing  |  1 = Likely won’t renew, gone silent
+
+Submission: renewal received but not yet delivered to customer
+
+Solutions Proposal: renewal delivered to customer
+
+Contracting: customer confirmed renewing, awaiting PO
+
+ 
+
+⚠  Note: The above reflects the ideal methodology confirmed on March 9. Taylor confirmed that for sub-$20k renewals, phone calls are rarely needed as email handles the majority. Voice channel scope for the MVP requires confirmation.
+
+ 
+
+
+
+4: PO imminent or strong signals of renewal
+
+3: 75-100% likely, active engagement
+
+2: 50/50, contact made, discussions ongoing
+
+1: likely won't renew, gone silent
+
+
+
+ 
+
+Most Impactful Workflows for the Agent
+
+•  T-180 early outreach  initiate the conversation before the compressed reactive window. Brad  specifically identified this as the highest-value intervention.
+
+•  Structured multi-touch email cadence  ensuring 100% methodology compliance across all ~1,500 accounts
+
+•  Inbound response handling  consistent automated responses to routine questions (billing, service delivery, OEM coverage, pricing, FAQs) to free team capacity
+
+•  Escalation routing  categorize inbound responses and route to the correct team (Sales, Pricing, Legal, Billing, Service) based on question type
+
+•  Automated activity logging to Salesforce timeline  replacing the current manual email-upload-to-files workflow
+
+ 
+
+Internal Change Management
+
+•  Team behavioral shift from reactive to proactive posture  leadership alignment needed before launch
+
+•  Manual email-upload-to-Salesforce-files workflow will be superseded by automated timeline logging  training required
+
+•  Customer service team has never used Gainsight  any Gainsight-based dashboards or logging will require onboarding
+
+•  Sales rep CC workflow: today sales is only CC’d on sub-$20k renewals when the team can’t reach a contact. Future state is a summary dashboard or account-level digest  not individual CC on every email thread (to be confirmed).
+
+ 
+
+
+
+
+
+
+
+Channel Configuration
+
+From email name: customerservice@theremigroup.com TBD  confirm with team
+
+From email address:  customerservice@theremigroup.comTBD  confirm with team
+
+Reply handling: customerservice@theremigroup.com TBD  confirm whether replies route to a shared inbox, individual reps, or the agent for first-pass triage
+
+Unsubscribe process: TBD  confirm with team
+
+
+
+ 
+
+ 
+
+📋  Open Questions  Customer Journey and Workflow
+
+
+
+•  How is the right contact identified per account today? Is there a single contact field in REMI Salesforce, or multiple? What is the process when a contact bounces or is unreachable?
+
+•  For accounts where the customer service team engages at T-60 and the quote hasn’t been created yet, what does the agent send at T-180 and T-120 in the absence of a formal renewal document? These early touches need to work independently of the quote.
+
+•  The 4-quadrant health score framework exists but isn’t live. For MVP, what data signals are available today to differentiate outreach tone: NPS/CSAT from Power BI, service ticket history, or other?
+
+ 
+
+
+
+ 
+
+Section 4: Agent Authority and Boundaries
+
+This section defines what the Agent is authorized to do on behalf of your team, and where human judgment is required. Items marked [x] reflect what was discussed or confirmed on March 9, 2026. We’ll review and finalize remaining items together.
+
+ 
+
+What the Agent Will Do
+
+[x]  Send proactive emails to customers
+
+[ ]  Make proactive phone calls (voice channel not yet confirmed for REMI segment)
+
+[x]  Answer FAQs from your knowledge base (high priority given broad domain  scope to be confirmed with Taylor’s FAQ materials)
+
+[x]  Share standard documentation (renewal agreements, policy details)
+
+[x]  Provide non-sensitive account information (policy details, renewal dates, agreement summaries)
+
+[x]  Guide customers through standard renewal processes
+
+[x]  Schedule follow-up interactions
+
+[ ]  Update CRM records (automated Salesforce timeline logging is desired, technical feasibility to be confirmed)
+
+[x] Route equipment add requests to sales (NSA@theremigroup.com)
+
+[x] Forward POs to Account Services for registration
+
+[x] Send renewal confirmations upon PO receipt
+
+
+
+
+
+ 
+
+What the Agent Will NOT Do
+
+[x] Negotiate pricing or offer discounts
+
+[x] Modify contract terms or coverage
+
+[x] Make product roadmap commitments
+
+[x] Handle payment or billing transactions (direct to billing@theremigroup.com)
+
+[x] Access sensitive financial data
+
+[x] Process refunds or delete customer data
+
+[x] Approve back-dates >1 month or large deletes >$10K
+
+[x] Send renewals for exception accounts without reviewing exception list
+
+
+
+Escalation Matrix
+
+The FAQ document discusses many common objections and potential escalations. 
+
+
+
+Situation
+
+Priority
+
+Who Handles It
+
+Routing 
+
+How We’ll Transfer
+
+Discount or pricing request
+
+High
+
+Pricing team + Sales rep
+
+underwriting@theremigroup.com / Liz Campbell
+
+Agent stops negotiation; routes to Sales + Pricing with full conversation summary
+
+Service delivery complaint / dissatisfaction
+
+High
+
+Sales rep + Service team (phone preferred)
+
+dispatch@theremigroup.com / Teretta Edwards
+
+Agent acknowledges, summarizes issue, triggers flag for Sales + Service follow-up
+
+Contract modification / red-line request
+
+High
+
+Sales rep + Legal
+
+contracts@theremigroup.com / Cathy Sigurdson or Kristen Childers
+
+Agent routes to Sales + Legal; does not engage on contract terms
+
+Billing dispute or invoice question
+
+Medium
+
+Billing team (Sales looped in)
+
+billing@theremigroup.com / Kati Siekkinen
+
+Standard billing questions handled by agent; disputes routed to Billing
+
+Non-responsiveness (no reply after full sequence)
+
+Medium
+
+Sales rep (phone outreach)
+
+revenueorg@theremigroup.com / Eric Curry
+
+Agent flags account; triggers Sales rep to engage directly
+
+Upsell / equipment addition interest
+
+Medium
+
+Sales rep
+
+NSA@theremigroup.com / Justin Bellinger
+
+Agent captures intent, routes to Sales as opportunity signal
+
+External funding / budget constraints
+
+Medium
+
+Sales rep + market leadership
+
+
+
+Agent captures context; Sales and market leadership engaged
+
+Legal question or compliance concern
+
+High
+
+Sales + Legal
+
+contracts@theremigroup.com
+
+Immediate escalation; agent does not engage on legal matters
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+⚠  Note: Justin Bellinger noted that “pretty much every escalation point” involves Sales or goes through Sales to bring in the appropriate party. Sales reps want visibility on any sentiment signals from sub-$20k accounts  even though they’re not compensated on them. The preference is a dashboard or account-level summary rather than individual CC on every email thread (to be confirmed).
+
+ 
+
+ 
+
+Post-Engagement Actions
+
+Following each agent interaction, the following information is needed:
+
+[x]  Complete interaction transcript  logged to Salesforce timeline (replacing manual file upload)
+
+[x]  Customer context and history
+
+[x]  Identified issues or needs  triggers escalation routing
+
+[x]  Recommended next actions
+
+ 
+
+📋  Open Questions  Agent Authority and Boundaries
+
+•  Has your legal team reviewed AI-initiated outreach? Do you have a consent or disclosure framework in place for automated email and potential voice contacts?
+
+•  Do you have do-not-call and email suppression lists, and how would we access those before any outreach goes out?
+
+• When should an agent hand off to a teammate when they have not had success with driving the renewal? Is T-30 too late? 
+
+•  What is the escalation response time expectation; when the agent flags an account for Sales, how quickly should someone pick it up?
+
+•  For non-responsive accounts (agent completes full sequence with no reply); what is the threshold before Sales is triggered, and what does Sales do differently?
+
+ 
+
+
+
+ 
+
+Section 5: Communication and Customer Engagement
+
+Agent Configuration
+
+Languages
+
+English is assumed as the primary language based on the US-focused customer base confirmed on March 9. Please confirm whether any customers require communication in other languages.
+
+ 
+
+Agent Personality and Voice
+
+The agent should reflect the relationship-oriented, consultative tone the PartsSource customer service team uses today. The team emphasized the value of “consistent messaging” with the to sound like a trusted, knowledgeable team member, not a generic automated system. Brad described the aspiration as replicating the experience the account management team provides, at a scale that wasn’t previously possible.
+
+ 
+
+Email Templates
+
+
+
+Standard: Remi Renewal Notification – [Account Name] – [Policy Number] effective [Start Date]
+
+When changes exist: Remi Renewal Coverage Change Notification – [Account Name] – [Policy Number] effective [Start Date]
+
+Expired: Remi Expired Coverage Notification – [Account Name] – [Policy Number] expired [Date]
+
+
+
+Template 1: Initial Outreach (T-180)
+
+Subject: [Customize together]
+
+Hi [First_Name],
+
+[Opening that reflects your brand voice and existing relationship  acknowledge the upcoming renewal naturally]
+
+[Value paragraph referencing their specific service history or outcomes where available]
+
+[Clear call-to-action appropriate to the T-180 stage  sentiment check, any equipment changes anticipated]
+
+[Signature]
+
+ 
+
+Template 2: Follow-Up  Engaged Customers
+
+[Variations based on customer health signals and prior engagement  to be built with Renewal Queen templates as reference]
+
+ 
+
+Template 3: Follow-Up  At-Risk or Non-Responsive Customers
+
+[More consultative approach for customers showing disengagement signals or service delivery concerns]
+
+ 
+
+Template 4: Renewal Delivery (T-60 PO-based / T-30 auto-renew)
+
+[Formal renewal agreement delivery  based on existing Renewal Queen templates for price increases, vendor changes, and standard renewals]
+
+ 
+
+Phone Scripts
+
+Voice outreach scope: TBD  confirm whether voice is in scope for the REMI segment in Phase 1. Taylor confirmed sub-$20k renewals are resolved via email “more often than not.” Voice may be Phase 2.
+
+ 
+
+Value Metrics for Personalization
+
+Which 3–5 data points best demonstrate value to your REMI customers? To be confirmed once data sources are mapped.
+
+Metric 1: TBD  confirm with team (e.g., service response time vs. SLA)
+
+Metric 2: TBD  confirm with team (e.g., equipment uptime / issues resolved)
+
+Metric 3: TBD  confirm with team (e.g., cost savings vs. OEM coverage)
+
+Metric 4: TBD  confirm with team
+
+Metric 5: TBD  confirm with team
+
+ 
+
+📋  Open Questions  Communication and Customer Engagement
+
+•  Can you share 2–3 emails your best renewal rep sends today that you’d want the agent to sound like  what makes those work? 
+
+•  When your REMI customers decide whether to renew, what are the 2–3 specific metrics that make them feel the service is genuinely working for them? These become the personalization data points in every outreach.
+
+•  Should the agent be transparent that it’s AI, or presented as a member of your team? This has both trust and legal implications worth discussing before launch. Typically, emails can come from a generic alias and responses, when asked, should confirm that it’s an automated system. 
+
+•  Are there phrases, tones, or topics the team actively avoids in customer communication? Any brand or compliance guidelines on language?
+
+ 
+
+
+
+ 
+
+Section 6: Data and Security
+
+Data Requirements
+
+Flat files likely to be the source of truth for MVP but this approach needs to be confirmed along with where escalations and data should be passed. 
+
+
+
+ 
+
+ 
+
+Data Type
+
+Fields
+
+Source System
+
+Update Frequency
+
+Customer/Account
+
+Account name, ID, end market, type
+
+REMI SF, Polaris
+
+TBD
+
+Contact Details
+
+Name, email, phone, title, timezone, billing/renewal contact, broker
+
+REMI SF + EMMA
+
+TBD (6–9 duplicates, major risk)
+
+Contract/Policy
+
+Agreement #, dates, premium, PO/auto-renew, contracting vehicle
+
+Polaris + flat files
+
+TBD
+
+Renewal Quote
+
+Decision type, price changes, vendor restrictions, non-renewals, prior PO #
+
+Access DB, Polaris
+
+At renewal cycle
+
+Usage/Health
+
+Service events, loss ratio, CSAT (4.8/5 avg), SLA
+
+EMMA/Polaris/Power BI
+
+TBD
+
+Support History
+
+Open tickets, recent events, escalations
+
+Dispatch (EMMA)
+
+TBD
+
+Suppression Lists
+
+Do-not-call, opt-out, exceptions
+
+TBD, needs provisioning
+
+TBD
+
+Equipment Schedule
+
+Make, model, serial, item #, sublocation, coverage
+
+Polaris/EMMA
+
+TBD
+
+Data Type
+
+Fields
+
+Source System
+
+Update Frequency
+
+Customer/Account
+
+Account name, ID, end market, type
+
+REMI SF, Polaris
+
+TBD
+
+Contact Details
+
+Name, email, phone, title, timezone, billing/renewal contact, broker
+
+REMI SF + EMMA
+
+TBD (6–9 duplicates, major risk)
+
+ 
+
+Customer nuance that should be considered out of scope for MVP:
+
+New York State accounts: 90-day notice required for non-renewals; price increases cannot be applied without manager sign-off; auto-renewals sent 45 days prior (not 30)
+
+New York City accounts: same 90-day non-renewal notice; contract number and discount percentage must appear on renewal
+
+NYS Downstate: subject line must include vendor name, prior PO number, department, and term dates; Excel version required alongside PDF
+
+USPI: written approval required to register; specific contracting vehicle required
+
+State of NC: prior PO number required in subject line
+
+Ohio State University: renewals submitted via eStores portal, not email
+
+State of Indiana: equipment schedule broken out by department, sent to individual contacts
+
+Kansas State University: broken out by department, individual item-level contacts
+
+Indiana University: broken out by location, sent to each department head
+
+Duke University: requires SOW and EMA attached to every renewal
+
+Case Western Reserve University: requires EMA attached to every renewal
+
+San Luis Obispo Surgery Center: requires signature portion on renewals
+
+Excedr: no increases if no losses; valid increases capped at 5%
+
+CNA accounts (CWS prefix): sent to CNA rep, not the customer
+
+K-12 accounts: wall-to-wall coverage, managed by Kyle Hornick
+
+Accounts with unique contact routing:
+
+Mass General Brigham (Dept PPM): specific email addresses only
+
+Sonic Healthcare USA / Certified Group: must loop in Kyle Hornik
+
+Surgical Care Affiliates / SCA: must loop in Kiernan Joyce
+
+NYC Health & Hospitals battery quotes: three specific contacts required on every quote
+
+
+
+⚠  Note: No unique identifier currently links REMI Salesforce, Polaris, the Access database, and Gainsight CS. The policy/agreement number in Salesforce opportunities is a candidate mapping key to Polaris records. Annual premium values and living policy changes (adds/deletes) are in Polaris only. The MVP will use a flat file approach. Elana Weinbaum raised concern about any integration that creates rework post-tech transformation; the flat file MVP approach is designed to be transformation-safe.
+
+ 
+
+ 
+
+Data Privacy and Governance
+
+Data retention policy: TBD  confirm with team
+
+PII handling requirements: TBD  confirm with team
+
+Customer consent process: TBD  confirm with legal team, particularly for AI-initiated email outreach
+
+Data deletion requirements: TBD  confirm with team
+
+ 
+
+📋  Open Questions  Data and Security
+
+•  Who owns admin access to REMI Salesforce and Polaris, and what is the process for extracting a flat file for MVP use? 
+
+•  What is the process to get updates to the flat files, if that is the approach we determine? 
+
+•  Can we get a sample export or schema from Polaris and the Access database before the data workshop? This will significantly accelerate the data dictionary completion.
+
+•  What are your data retention and PII requirements  has legal/security already defined those? Is there a consent framework for AI-initiated outreach?
+
+•  Where is the do-not-contact/suppression list maintained, and who owns it?
+
+•  What does your current outbound email infrastructure look like  are renewals sent from Salesforce, directly from inboxes, or another platform? This affects how Atlas will integrate with the send workflow.
+
+ 
+
+
+
+
+
+
+
