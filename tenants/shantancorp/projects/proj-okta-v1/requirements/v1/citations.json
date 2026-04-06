@@ -1,0 +1,53 @@
+{
+  "company": {
+    "company_description": "The auto-renewal program covers both Okta (Okta.com) and Auth Zero customers... Okta customers have the Success Hub to view their quotes; Auth Zero customers use a different portal.",
+    "total_customers": "Melissa estimated the rough scale is around 5,000 customers and ~$60M in ARR but deferred to the core team for precise numbers.",
+    "total_revenue": "Melissa estimated the rough scale is around 5,000 customers and ~$60M in ARR but deferred to the core team for precise numbers.",
+    "grr_nrr": "The GS team's current framing targets GRR improvement from 78% to 80%. Melissa's clear direction: keep NRR out of Phase 1.",
+    "team_size": "7 CGS contractors based in Romania... Dan, Marian and Sumer are renewal managers; Emily is outgoing renewal ops lead; AEs have renewals in compensation for first time this year.",
+    "primary_use_case": "The biggest GRR impact comes from handling opt-out scenarios and running save plays; Phase 1 focuses on automated emails and common reply handling to keep customers in renewal flow."
+  },
+  "segments": {
+    "segments": "Phase 1 will target Okta-only auto-renew customers... Melissa estimated the rough scale is around 5,000 customers and ~$60M in ARR..."
+  },
+  "value": {
+    "pain": "Any customer reply to a renewal email automatically removes them from auto-renew, regardless of the nature of the reply... simple, answerable questions... drain contractor bandwidth and delay renewals unnecessarily.",
+    "root_cause": "Any customer reply... removes them from auto-renew... placed in queue for CGS contractor... Sendgrid issues... Salesforce service user setup needed... Contractor bandwidth is limited to 7 people.",
+    "consequence": "Delaying renewals unnecessarily... reducing the manual triage load on the 7 CGS contractors... The GS team's current framing targets GRR improvement from 78% to 80%.",
+    "future_state": "The agent handles known, frequent reply categories autonomously or semi-autonomously... Melissa's dream state: inject a value realization snapshot into the renewal email... discount guardrails and expanded agent authority.",
+    "leading_indicators": "Phase 1 objectives: personalized, engaging emails... handle common inbound replies... hand off cleanly to RM... reducing manual triage load.",
+    "success_criteria": "The GS team's current framing targets GRR improvement from 78% to 80%... discount guardrails... trust before autonomy."
+  },
+  "current": {
+    "renewal_workflow": "Okta's auto-renewal program automatically renews contracts without requiring manual RM involvement, provided the customer hasn't opted out. The program is governed by a checkbox in Salesforce; when checked, the system generates a quote automatically in a nightly batch at T-120 days before the renewal date. That quote is immediately approved and made primary — no human needs to touch it — and it flows directly into forecasting. ... Customer signals they want out (via email back-and-forth with Dan) ... Dan asks Marian or Sumer (renewal managers) via Slack to uncheck the auto-renewal checkbox ... Dan works the account manually — save plays, discount offers, etc. ... For Phase 1, when a customer needs to be taken out of auto-renewal, the agent would submit a deal support ticket with all relevant information rather than acting directly.",
+    "core_systems": "| System | Role |\\n|---|---|---|\\n| **Gainsight** | Primary platform — email sending, timeline logging, CS data, CTAs; system of record |\\n| **Salesforce** | Gainsight auto-saves all outbound emails; AE and renewal opportunity data |\\n| **SendGrid** | Used only for dynamic contract attachment; unreliable; to be replaced |\\n| **Clary** | Source of contracts/attachments |\\n| **Snowflake / Databricks** | Data layer accessed by Matic and potentially by GS for value signals |\\n| **Matic** | Digital Success team's personalization tool |\\n| **Staircase** | Piloted for enriching T-150 notifications |",
+    "pain_points": "Any customer reply to a renewal email automatically removes them from auto-renew ... simple, answerable questions drain contractor bandwidth ... Sendgrid — emails frequently don't send, hit spam filters, or fail silently ... no customer-facing touchpoints between T-150 and T-90 ... Service user setup, email alias confirmation, and Salesforce field requests all have non-trivial lead times ... Emily is the single source of truth ... Dan asks Marian or Sumer via Slack to uncheck the auto-renewal checkbox ...",
+    "working_well": "Okta's auto-renewal program automatically renews contracts without requiring manual RM involvement ... Gainsight is the preferred email hub; all communications logged ... T-150 internal notification ... defined cadence at T-90 ... Deal support ticket system used for changing auto-renewal status ... Emily has pre-built templates for common issues ... The team discussed using this pilot as an A/B test ...",
+    "churn_triggers": "Any customer reply to a renewal email automatically removes them from auto-renew ... common reply categories include removal from auto-renew, incorrect contact, quantity changes ... internal T-150 notification could be enriched with customer health signals (Staircase) ... adoption campaigns avoided near renewal to not send mixed messages ... Melissa's dream state is personalization to reduce cancellation likelihood ...",
+    "risks": "Phase 1 will target Okta-only auto-renew customers; Auth0 is more complex ... Okta for Good customers (nonprofit pricing, special handling) ... Emily leaving Okta in ~1 month ... any reply removes customer from auto-renew; handled manually ... Emily flagged Salesforce field requests are politically difficult ... manual Slack notification for unchecking auto-renew checkbox ..."
+  },
+  "journey": {
+    "journey_steps": "T-150: Internal notification to AEs; Agent outreach emails with personalization; handles common replies autonomously; escalates opt-outs with context to RM"
+  },
+  "replies": {
+    "reply_categories": "Examples Melissa shared: removal from auto-renew, contact update, quantity changes, upsell, Okta for Good. Agent handles known replies autonomously, escalates beyond scope to RM. Emily shared pre-built email templates for common issues.",
+    "handoff_scenarios": "If escalation needed, agent adds Dan to email thread with full context and triggers checkbox uncheck. Dan picks up conversation. Dan's reply signals agent to stand down. Save plays and discounts handled by Dan, not agent in Phase 1."
+  },
+  "guardrails": {
+    "will_do": "The primary value proposition for Phase 1: The agent handles known, frequent reply categories autonomously or semi-autonomously... Phase 1 objectives: Reach out to auto-renewal customers... handle common inbound replies... identify when situation exceeds scope and hand off... Submit a deal support ticket with all relevant information...",
+    "will_not_do": "Melissa's clear direction: keep NRR out of Phase 1... Phase 1 is NOT: Making pricing decisions or generating custom quotes, Executing save plays (that's Dan's job), Handling micro-changes... Fixing bugs... agent would submit a deal support ticket... clear rule that RM reply signals agent to stand down."
+  },
+  "comms": {
+    "voice_style": "Current emails are described as extremely basic — close to \"you're renewing, please confirm.\" Any improvement would be meaningful. Adoption campaigns are intentionally avoided near the renewal window to avoid sending mixed messages.",
+    "channels": "Gainsight is the preferred email hub. SendGrid used only for dynamic contract attachment ... The agent needs an email alias to send from, e.g., 'autorenew@okta'. Dan (RM) is included by email thread when handoff needed. Slack notifications used internally.",
+    "contact_targeting": "Customer reply removes them from auto-renew and triggers queue for CGS contractors. Agent handles known replies, escalates complex cases to RM Dan by adding him to email thread. Deal support tickets used for changing auto-renew status.",
+    "templates": "Gainsight slides already contain all the email copy for Gainsight-sent messages. Sendgrid copy exists but requires zooming into screenshots. Emily has pre-built canned Success Hub response templates for common access issues."
+  },
+  "data": {
+    "data_sources": "| System | Role |\n|---|---|\n| **Gainsight** | Primary platform — email sending, timeline logging, CS data, CTAs; should be the system of record for all renewal communications |\n| **Salesforce** | Gainsight auto-saves all outbound emails here as well; AE and renewal opportunity data |\n| **SendGrid** | Used only for dynamic contract attachment (limitation in Gainsight); likely replaceable if GS can solve attachment |\n| **Clary** | Source of contracts/attachments |\n| **Snowflake / Databricks** | Data layer accessed by Matic and potentially by GS for value signals |\n| **Matic** | Digital Success team's personalization/value snapshot tool; potential source of logic to adapt |\n| **Staircase** | Okta is piloting this; could enrich internal T-150 notifications with customer health signals"
+  },
+  "roi": {
+    "impact_projection": "The GS team's current framing targets GRR improvement from 78% to 80%.",
+    "roi_inputs": "Melissa estimated the rough scale is around 5,000 customers and ~$60M in ARR but deferred to the core team for precise numbers."
+  }
+}
