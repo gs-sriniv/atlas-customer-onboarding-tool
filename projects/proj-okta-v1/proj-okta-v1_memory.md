@@ -65,3 +65,11 @@ _Follow-up tasks for the CSM or customer._
 - **grr_nrr**: {"gross_revenue_retention":78,"net_revenue_retention":null}
 - **team_size**: 7
 - **primary_use_case**: Automating renewal email reply handling to reduce manual opt-outs and improve gross revenue retention.
+
+### 2026-04-06 — Company overview
+- **company_description**: Okta operates a uniform auto-renew SaaS model offering enterprise identity cloud services.
+- **total_customers**: 5000
+- **total_revenue**: 60000000
+- **grr_nrr**: {"gross_revenue_retention":78,"net_revenue_retention":null}
+- **team_size**: 7
+- **primary_use_case**: Automate handling of frequent inbound replies to auto-renew emails to reduce manual workload and improve gross revenue retention.
