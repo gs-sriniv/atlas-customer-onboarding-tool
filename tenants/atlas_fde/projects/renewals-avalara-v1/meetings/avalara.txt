@@ -1,0 +1,577 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2869
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Avalara <> Gainsight Connect\
+\
+Brent Krempges with Avalara, Inc.\
+Recorded on Apr 9, 2026 via Zoom, 1h 2m\
+\
+\
+\
+Participants\
+\
+Gainsight\
+Brent Krempges, Chief Customer Officer\
+Ori Entis\
+Prem Parameswaran\
+Michelle Reiter, Senior Customer Success Manager\
+Adam Mackie, Senior Manager, Customer Success\
+Keith McCarthy, Strategic Customer Account Manager\
+\
+Avalara, Inc.\
+Liz Armbruester, EVP, Customer and Compliance Operations\
+Danny Fields, EVP Engineering and CTO\
+Shahan Parshad\
+Cassandra Strausbaugh, Other\
+Mark Anderson, Gainsight Admin and Business Analyst\
+\
+Other\
+Adam Staelin\
+\
+\
+\
+Transcript\
+\
+0:00 | Keith\
+hey, mark. Hello? How's. \
+\
+0:03 | Michelle\
+it going? It's. \
+\
+0:04 | Keith\
+going well, how are you? I'm. \
+\
+0:06 | Michelle\
+good. I am good. \
+\
+0:18 | Michelle\
+Hello? Hey, hey, Brent. How are you? Sorry, my camera was hidden. I'm good. How are you? I'm. \
+\
+0:25 | Brent\
+doing well. Good. \
+\
+0:27 | Michelle\
+Mark, how are you? \
+\
+0:28 | Keith\
+I'm well, thanks. How are you? \
+\
+0:30 | Brent\
+I'm well, thank you. \
+\
+0:38 | Michelle\
+Hey, Adam. Oh, \
+\
+0:40 | Keith\
+right, mark. Hey? \
+\
+0:42 | Brent\
+There? Hello? \
+\
+0:49 | Keith\
+Hey, good afternoon, everyone. \
+\
+0:50 | Michelle\
+Hello? Hi. \
+\
+0:52 | Brent\
+There? \
+\
+0:52 | Michelle\
+Cassie? \
+\
+1:02 | Cassandra\
+Hi, I'm just hopping off of another call. \
+\
+1:05 | Michelle\
+No worries. How are you? Good. \
+\
+1:09 | Cassandra\
+You guys are all so small, but it's nice to see your faces. \
+\
+1:14 | Michelle\
+It's nice to see everyone's faces and. \
+\
+1:17 | Cassandra\
+I'm super excited for this too. This is going to be great. Us. \
+\
+1:21 | Michelle\
+Too, it's going to be a good conversation. \
+\
+1:24 | Cassandra\
+Thank you so much for putting this all together. \
+\
+1:26 | Michelle\
+Absolutely. Yeah. \
+\
+1:29 | Keith\
+Maybe we can maybe Michelle while people jump on, we put the deck down so we can see everyone's face. I'm like looking too. I'm like that's. Casey. \
+\
+1:38 | Cassandra\
+You tiny people? \
+\
+1:40 | Michelle\
+On this tiny little screen there we go. \
+\
+1:49 | Michelle\
+Yeah, that is better. Yeah. Hi, Sean. \
+\
+1:55 | Shahan\
+Hello? \
+\
+1:56 | Michelle\
+Hey, Sean. Nice to see you again. Hello? \
+\
+2:01 | Cassandra\
+John, you're wearing orange today? I love it. \
+\
+2:05 | Michelle\
+Yep. \
+\
+2:05 | Keith\
+Sounds like Daniel the orange memo. \
+\
+2:09 | Michelle\
+I. \
+\
+2:10 | Brent\
+thought that was a rule. I thought you all had. \
+\
+2:11 | Cassandra\
+It, yeah, I'm like I have my orange on it's not Wednesday, but it's here. \
+\
+2:16 | Adam Staelin\
+Friends. I didn't know you were going to be on this call. \
+\
+2:18 | Brent\
+I know. How are you? Adam? \
+\
+2:19 | Michelle\
+Good. Wow. \
+\
+2:21 | Adam Staelin\
+Where's your orange? \
+\
+2:22 | Brent\
+Where's your orange? \
+\
+2:25 | Adam Staelin\
+Where's my orange? Oh, it's a Thursday orange? \
+\
+2:27 | Brent\
+All right. Got it. Perfect. \
+\
+2:29 | Cassandra\
+He's feeling avalara blue today, so. \
+\
+2:30 | Brent\
+I like it. I like it before you said that I was just going to say like I was in one of these vista sales cohorts, and at first I was like, wow, I know what group is together based off of their attire, and then quickly learned about the culture and the rule. \
+\
+2:49 | Shahan\
+Is Liz\'85 on the invite? Yeah. \
+\
+2:54 | Michelle\
+Liz? \
+\
+3:03 | Michelle\
+I don't see her well. \
+\
+3:05 | Shahan\
+Danny isn't either, but he got it. Maybe I forwarded it. Oh, \
+\
+3:08 | Michelle\
+I see Danny, right? \
+\
+3:10 | Shahan\
+But he's not on the invite. \
+\
+3:11 | Cassandra\
+Michelle was able to see extra people that I was not able to see when I looked at the invite because that was my concern too. Yeah. \
+\
+3:18 | Michelle\
+Liz. \
+\
+3:19 | Cassandra\
+Real quick. I. \
+\
+3:20 | Shahan\
+think I must have forwarded this to Danny and Liz. And so maybe that's why I can't see her but I'll be there. \
+\
+3:26 | Adam Staelin\
+Yeah, Danny's right there. \
+\
+3:29 | Michelle\
+Yeah, Danny's here. \
+\
+3:31 | Shahan\
+Yeah, no, no, I know he's right here. It's that like he's not on the invite but he's here, which means I think I forwarded the invite to him and hopefully I did to Liz as well. I just can't see the name on when I look at the invite. \
+\
+3:47 | Michelle\
+Okay. You let us know. Do you want us to wait and see if Liz is able to hop on? \
+\
+3:56 | Shahan\
+I just pinged her. No, I think we should get started and record it, which I think we are recording. Yeah. \
+\
+4:05 | Michelle\
+Yep. We are recording now. Okay, let me share my screen again now that we've all seen each other's faces. Okay. Can you see it? Yep. All right. I'm, going to kick us off. Thank you all for being here. We are very excited to be bringing both of our teams together today. Shahan. Cassie, this really was spun up from an email you guys had sent to us back in February with a request for a peer conversation about what's actually working across the industry, what we're seeing to improve grr at a systemic level. Shahan. You also mentioned that you and your team are thinking about grr every day. I would be willing to bet from the GainSight side probably pretty good money that we are also thinking about grr every single day. So we feel that we resonate with that myself included a quick moment from my week, I was helping my daughter with her spelling list. Churn was on that list. And if I'm honest, I felt pretty triggered saying that word and I wasn't even at work. So I think that just really goes to show about how much the grr is all on our minds right now. So I'm really glad that we're here together. Having this conversation. My goal for today. I want this, we all want this to be very collaborative, very open candid conversation. If I could have a goal for you all, I want you all to walk away with some new ideas, new approaches, maybe a different way of thinking of things on how you guys can go back and attack the grr challenges that you're seeing within your business\'85 very quickly too. Introductions. Before we get into it, it's a large group Danny Shahan. Are you guys okay if I just run through the list of who's here from GainSight, and you guys can do the same on your end. So we can get into it. Yeah. Okay. Cool. From the GainSight side, we have Prem, our CTO, Ori who oversees our product and engineering, Brent, our Chief Customer, myself, your CS manager. I work very closely with Cassie and Corey, Adam Mackey, who is my manager, senior manager of CS, and then Keith your customer account manager, who you guys might have seen his face from time to time in conversations. I'll let you guys do the avalara side. You want to do it, Sean I. \
+\
+6:33 | Shahan\
+Think we can just read down the list. So we have Danny our chief technology and operations officer. He is probably the person at the company that is ultimately accountable for the grr number, but all of us are at the company. It's all in all of our mbos and it's a key metric for the business. And everyone at avalara, I'm the chief information officer, Sridevi isn't able to join. She runs business technology. We have, I think Terry on the call, he's part of our customer account management leadership. We have some folks from go to market strategy and operations, monish, and Corey, I think Angie is on the call as well. She supports business operations. Cassie is our GainSight lead and really appreciate you pulling this together. Alex is our GainSight admin. And then we have some folks from our customer account leadership, account management leadership as well, mark anderson and mark yatsko. Anyone else that I missed? And Liz, our CS officer is also joined? \
+\
+7:43 | Liz\
+Just joined. Thanks Mohan. \
+\
+7:46 | Michelle\
+Thank you for joining. Sorry, you were left off. All right, yeah. And. \
+\
+7:52 | Shahan\
+Then just one thing will we be able to touch on staircase in this call as well? \
+\
+7:57 | Michelle\
+Yep, absolutely just to kind of walk through what we've got planned. But then we can kind of change directions from there. So we've got a plan today that really speaks to how we and our customers are thinking about and addressing grr challenges from conversations that we've had with you all the last few months. We've identified what some of those themes and challenges are. And we've got items prepped if we want to anchor in those specific challenges. What that means for your team? Where you're focused? And then we can share the patterns that we're seeing across our customer base, what those different systemic levers are that are moving the needle. We can walk through the insight and data layer piece. We've got it ready to go to do another refresher demo of staircase, Danny. I know that you specifically asked to see that. And we can also touch on how we're seeing other organizations do this at scale through AI and agentic approaches. All of that to say we've got that all prepped. But I think most importantly, Danny and Shahan, where do you want to spend the most time? And what do you want to get out of today? I? \
+\
+9:05 | Danny\
+Think for me there were two things. So obviously staircase want to see a demo now that we've been using GainSight heavily for the past one year or so. I would like to see the features that are available in staircase. But the original idea behind the meeting was to learn from you all because you're thinking about grr every day and you're working with many companies. We wanted to see what can we learn from you in terms of process, how you think about things? Yeah. And just see what are we missing? Because we spend a ton of time every single day in our world, and I just want to make sure we're not missing anything. \
+\
+9:43 | Michelle\
+Shahan, anything you'd add to that, no. \
+\
+9:46 | Shahan\
+Nothing incremental, Liz from your end\'85 I. \
+\
+9:52 | Liz\
+Just think the touch on what you guys are doing and, you know, in a challenging operating environment, you know, financial environment that I love. I'm excited to see what's in the new retention reality section because again, you know, thinking big picture segments of customers like what are the new motions? And how do we, you know, how potentially could we leverage AI differently to ensure that we're seeing the numbers that we want to see in terms of grr and ARR? \
+\
+10:20 | Michelle\
+Yeah. Okay. That sounds good. So, I'll go to the next slide where we kind of walked through or identified what we're seeing as your current retention challenges. And then Ori, I'll let you kind of step in with how we kind of go about and what we're seeing. So these were the common retention themes challenges that we are seeing from the past couple of months just in conversation, so pricing and perceived value that the customers aren't connecting the cost to the value that avalara delivers, onboarding, friction, getting live is harder than it should be for those complex environments. And then customization at scale. Does this resonate with what you're working through every day? \
+\
+11:08 | Danny\
+I'm not sure about the customization at scale. What do you think about that one Liz? \
+\
+11:12 | Liz\
+I think there's a component of the tax specifications\'85 right? The customer is going to walk in the door and say, hey, these are my challenges and for compliance, yeah, we can cut them into broad categories and every customer is going to deal with the same thing. But in terms of the fact that we, you know, go out and partner with 1,800 partners, right? So there's customization to some degree, which really isn't like we have to develop something new, but we have to know things about all 1,800 partner environments and we have to do that at scale because you never know if it's a customer that's going to walk in with Netsuite or oracle or name your platform who's also on some E comm provider, right? And the expertise around solving their tax compliance in that environment can be a challenge to solve at scale. I think that's the element of how I would characterize customization, not true like customization of our products. It's not that. Yeah. So maybe, sorry. \
+\
+12:12 | Ori\
+Go ahead, no. \
+\
+12:14 | Adam Mackie\
+I was going to ask Liz, like I mean, because you guys have probably about 40 50,000 customers, I think globally. So I'm curious like churn challenges around particular segments like the enterprise side of things like everyone's struggling with digital and scale and how do you hit your long tail customer base? So curious kind of how you guys are seeing that from a specific segmentation standpoint and the differences there? \
+\
+12:37 | Liz\
+Well, we solve the, you know, solve for the low to the high. And I think we're seeing, you know, some in the mid market again, pricing pressure, sensitivity, competitor landscape is all weighing into that. I think we're seeing some attrition that's okay, actually in the lower in the low end where those customers are really pricey to be able to actually serve the way that they need. They also don't have a lot of tax knowledge which makes them expensive to serve, you know, and they want their products and services served up in a way where it's really like a total set it and forget it and tax just kind of isn't that way. So, you know, I'd say that we'd love to have less in our sweet spot in the SMB space. And of course, we'd love to have less in enterprise, but, you know, we are seeing some pot. I would call it positive attrition down in the low end where we do want to see it. \
+\
+13:33 | Adam Mackie\
+Yeah, that makes sense. \
+\
+13:38 | Liz\
+Or were you going to say something? \
+\
+13:40 | Ori\
+Yeah, I was going to. So, hi, everyone, it's great to meet you. As Michelle mentioned, I oversee product and engineering, just kind of context. I was the founder and CEO of staircase and we got acquired about a year and a half ago. And now I'm here at GainSight and I just want to share before I kind of dive into a couple of things I just want to share. I've been at probably 10 or 15 conversations with various, you know, SaaS companies over the past year, a couple of weeks and I just came back from humanx, the big AI conference in San Francisco where I was also presenting and let me try to summarize for a minute what I think most SaaS companies are facing and especially in the CS world and tell me if I'm hitting on the right points. So this is what I hear and we're facing too over the past year or two. I have purchased several SaaS tools like CRM, like GainSight, like various other tools, they're helping manage my customer base. I have a directive from my CEO to use AI wherever possible. I cannot expand my headcount. I don't necessarily have to let people go but I cannot expand headcount. And I have a grr problem. What's my strategy. And I think that, that's the reality right now that a lot of companies in our space and everywhere are facing. And it's a reality that partly because there is a directive to use AI everywhere, there's a lot of possibilities. There's some great things that are happening but also the technology is kind of maturing there's also, I think some things that are working really well and some things that are a little bit more challenging. And we can obviously go deep here between Prem and myself. We can give you examples of things that are working well or not. First of all, does that resonate with you guys? Does that sound like something that describes the situation you guys are in? Yeah, I. \
+\
+15:47 | Liz\
+would say that's fair. I'm seeing head nods from Danny also. Yeah. \
+\
+15:50 | Adam Mackie\
+Yeah, yeah. \
+\
+15:51 | Ori\
+So, I think it's no longer about coming and sharing kind of a tactical like here's MCP or something like that? It's more about like how do I look at the holistic approach of my grr motion across several segments? And I'll start off maybe by sharing a little bit about what we're doing. And then I can also talk about potentially what we're seeing in the space. The first place that we are implementing or using AI was understanding the reasons for churn and what we've done on our side is a pretty heavy lift using a data science team of looking at all the potential data we had coming from a main contributor with staircase. But we also looked at various telemetry data and we spent, I would say I'd just say roughly about a week or two full time. I basically took my whole data science team and told them the only thing you guys are doing right now is pausing for a minute and doing a deep churn analysis. And out of that came a very, you know, a very descriptive report with a lot of different, you know, potential angles. But one of the things that you know, that we understood, you know, about the product was a certain levels of complexity and other sides that are unique, I think to our world maybe. And you know, I think the point here is not so much the insights but it's more of the process, right? Once we had that data, we then started to look at potential solutions to that. And some of the solutions are going to be product. Some of them are going to be service and some of them are going to be something new that, you know, I'm sure everyone you know, hears about which we're calling fde, right? It's a little bit more than service and it's not exactly product. It's somewhere in between. And it kind of jumps into one of the solutions that we're talking about, which is customization at scale which I think, you know, we can talk about what that where it's relevant. You know, obviously you guys have a large number of customers. But the idea here is that we're changing our operating structure and development cycle. We can talk about how that works in order to support a very large number of bespoke customizations of the product. So it's kind of a shift in some ways from the traditional SaaS, where everyone gets the same product to a motion where in some cases, and again, you have to be, you have to make that judgment call. You can actually offer customization. The customization could be at a professional service level and it could be also at a product level, right? So that means it could be actually part of your new production database. Let me stop for a minute and see if that is a direction that you are even thinking about. \
+\
+18:30 | Danny\
+Not really. I mean unless I'm missing something, Liz, no. \
+\
+18:34 | Liz\
+No, no. And just as I was thinking about, you know, what you're talking about? Ori, one of the other things I failed to mention is logo churn is way less of an issue for us. It's contraction within the account itself. And again, that speaks to number one, right? Price to value, number two, just things that we don't control. A business is shrinking, right? It may not be going away. They just need less of our product. So it's for us less about a thing that a customization would solve. But certainly, you know, we are considering what additional kind of adjacent services we might be able to offer. So in that vein, like maybe it's not customization, but it's the add on to making it something unique for them. Maybe, you know, for us, maybe audit was a discussion that we had earlier today. I'm not sure that's the route we'd go but that would be the only kind of example I could think of in terms of a customized version of something that we would offer. We haven't really gone deep on that we. \
+\
+19:41 | Danny\
+Typically or we don't customize our product. I mean, the customization that you're talking about here that Liz latched onto it's, that unique integration that we have from an ERP to avalara. We have 1,800 signed integrations with third parties and our customers connect over those integrations so that's probably the level of customization integration we would go to when we see customers either churn a logo or drop a product or downgrade a plan. We see when we do the analysis, there are issues around pricing perceived value and onboarding. It's the perceived value is the piece that we're latching onto in all of this. So, I think as we have the conversation with you, it's how do we have the conversation with the customer about value and how do you track those conversations and track the value that we're delivering or not delivering to a customer on an ongoing basis? So from the time of sale or before the sale is made to the point where they're about to churn a logo or churn a product? We should be having the value conversations all the time and that's an area I think I'm interested in digging into. Yeah. \
+\
+20:52 | Liz\
+I just want to invite Adam. I just saw you were on this call. Sorry, I missed you earlier. You were not in my window. You're living this every single day? Like are we representing what you're seeing? Do you have anything else you want to add into this conversation because you're talking to customers every day? \
+\
+21:09 | Adam Staelin\
+Yeah. I\'85 mean, I certainly, we GainSight is a part of our daily life, right? And we count on it for a lot of things. \
+\
+21:26 | Adam Staelin\
+I mean, I haven't heard anything that I disagree with yet. Okay? All right. I. \
+\
+21:31 | Liz\
+Was going to give you an opportunity to weigh in just again, no. \
+\
+21:33 | Adam Staelin\
+I appreciate it and I will. \
+\
+21:35 | Liz\
+In the customer world, yeah, every day. \
+\
+21:38 | Ori\
+So, okay. \
+\
+21:40 | Brent\
+I was just going to say like, what are these? Because I'm curious like it sounds like we're balancing a little bit, what I would classify as like\'85 controllable and uncontrollable churn right now. Yeah. And so there's this balance between controllable and uncontrollable churn. And then where are we? When are we showing up with perceived value at the right time based off of what is in our control? So, what I'm curious of is like, how are y'all, thinking about that? And that's where we could jump in to show parts of what we're doing now, with staircase and, you know, other parts of our roadmap, but I think that's the hard part of knowing where to spend your time or that's what I face a lot is, where are we getting these macro headwinds that honestly, no matter how much I show up with a ton of resources, it may not actually control the uncontrollable churn risk within this one account. And then it's giving me better understanding of where do I actually put my human resources? Where it's controllable? I'm curious, how are you guys attacking that? And that would that may help us to show you some of the things we're doing, if that makes sense by the way? Yeah. \
+\
+22:44 | Adam Staelin\
+Brent, I think you, you're right? I mean, there's we have contractions, some of that is not controllable. If customers, you know, their business is going down, then we can't stop it. But where we're trying to use it and we've you know, we've got this thing called CX 360 which helps gives us some leading indicators. What we're trying to do is get ahead of the things that we can make a difference, right? Whether it be, you know, satisfaction or perceived, you know, price increase and things like that. And we're doing a much better job of finding that, but I'd still think we're not there yet. We're still missing some leading indicators and I think we've made some up, not made some up. We've designed some and the extent that GainSight can help with that would be phenomenal. I mean, that's we're trying to have, we want to make magic eight ball, right? That's what we're trying to get and, you know, it works 30 percent of the time. \
+\
+23:37 | Brent\
+But I do, I mean this is what, I mean, my perspective, Adam is like it, there's a lot of advancements with like with our MCP et cetera, not to make this all about tech, but you can show up now with more assumed value realization conversations versus made up like I'm pushing our team a lot more to make more bold assumptions until the customer tells you they're wrong versus asking them what they should be. So now, with some of these tools, it does allow you to have a little bit more directed conversations on calls like this, where again, until you're told no or otherwise, like we all have done in sales like, it does allow CS to have, this new lens on value. \
+\
+24:15 | Danny\
+Is, is GainSight said G, or over 90 percent? What's that is your Gor, over a 90 percent. \
+\
+24:23 | Brent\
+In some segments? \
+\
+24:28 | Adam Staelin\
+Yeah. \
+\
+24:29 | Brent\
+We have, we have our own challenges Danny in some parts of our business, but there are others where we're doing well, right? \
+\
+24:35 | Danny\
+So when you, so, when you wake up on a daily basis, then, and you're trying to tackle your G, or problem, what are you looking at? So we're looking at accounts that are going to renew in the next 30 60, 9,020 days. We're looking at issues that are open with support related to the technology services, related to pricing, and so on. So, we're chasing down all of those issues to make sure the customers are getting, a good experience like today, knowing that there's a renewal coming up, but going all the way back to the sales cycle when they onboard. We're also trying to make the onboarding process better. So, we're looking at the entire end to end system but especially around the customers that are renewing in the next couple of months. Whatever, is blocking that renewal or getting in the way or could cause a problem? We're trying to remove, those issues. What do you look at every day? When you're looking at your customers? Are you looking at the same type of things? Do you have a completely different approach to this? I think. \
+\
+25:36 | Ori\
+We're looking at, a larger window like in our world, it's too late. \
+\
+25:44 | Prem\
+So, I think to add to what Brent was saying, it does seem like the, it becomes critical for us to separate out what is controllable and uncontrollable churn. And just to dwell on that point for a little bit, we do have uncontrollable churn as well. Like one of the big problems that we struggle with is that csms, as a group is not growing as much. It's being hit by macro wins, and the profession never took off fully. So, that is something that we don't control. And answer for us. There is and probably is the same for you. Is there are no easy answers there. We have to make some really hard questions which means either developing newer products or as some, as Liz was saying, adding adjacent products is the only way you can\'85 prevent price contraction in an existing logo because you're not just not growing them or they're pulling back, to be specific about the controllable ones. Based on what we're seeing is, I would anchor us on\'85 two things that are happening in the macro world on top of the tools that you can buy from us that you can just get today, which is staircase and stuff, the two things that you want to deploy and see if they are worth it. Are, one, is it's become very easy to write software today, you can actually materialize and ephemerally create software. And then second is, can you spin up agents, right? So with agents where we have built products and where we have deployed them, is any place where we can run playbooks that are outside of building new products like in the CS motion, out of product motion, we can actually run playbooks for both renewals. And for onboarding, we don't have a product for onboarding. So that directly kind of goes to what you're talking about as onboarding friction. One place where you could reduce that friction is to create an onboarding program that doesn't involve adding a ton of people, but that uses agents to more\'85 do onboarding on a personalized basis. So that you can have an existing set of onboarding folks. But your standard onboarding motion itself becomes personalized and they just handle the exception. So overall, as a population, you would end up in a better place, we do have a product for renewals, which again allows you to run renewal motions that are more customized. You can start early. You can do different things. And then it's also with human in the loop. But then you're able to control your churn there as well. So I'll take a pause. There, like in terms of being able to do adding more software that's where we kept sort of maybe a little bit of an advantage where what we meant by customization is we are trying to reverse that trend of we've been in SaaS over a multi decade period of let's generalize everything, reduce customization. Let's bring everybody onto the same platform. And right now customers do see value and can you build something specific for me? So we built this separate motion where it's a combination of forward deployed teams both from professional services and engineers, where we are able to build things that are custom for our top 50 or our top 100 accounts. And we're making appropriate changes within our architecture to be able to do them at scale without burning us. So that's one place where we're using our ability to write software faster got. \
+\
+29:47 | Danny\
+It, do you have a CSM function in GainSight. \
+\
+29:53 | Prem\
+Brent, you're muted? \
+\
+29:58 | Danny\
+Yes, the answer is yes. Okay. And do you typically do your csms meet with customers like quarterly monthly and do reviews or how would you describe how the function works in GainSight? So. \
+\
+30:12 | Brent\
+What I would say is, so we have an engagement model Danny, but the engagement model looks different by cohort of customers. So you'll have, so I would say for the segment you all fall in, yes, it will be monthly, but on our more like scaled where you're managing more at 50 that's more quarterly. I would also say what we're doing now is for those risk we're looking at it based more off of cohorts and where are we seeing trends? And then how are we deploying certain like packages from CS, certain packages from services to try to do like a one to many approach where anything on more of our strategic segment that's where we're looking future quarters out in terms of what do we need to do specific for that customer from a service investment, ask an fde motion et cetera. And that's also kind of going back to your question earlier, we try to look at everything in terms of forecasting within a 90 day window. And then everything 90 days plus is where we're looking at what are the strategic plays that we need to run in order to minimize what the current forecast is for 90 days out? Because again to Ori's, point anything within 90 days, we're pretty much too little too late. So at that point, I'm deploying resources later. \
+\
+31:27 | Danny\
+How far out would you go? Would you go out to 12 months? \
+\
+31:31 | Brent\
+Yeah, 12 months is this? And what we're doing? Actually, Adam and I were on a call earlier this week because we were starting to talk about next year and I'm saying it just needs to be a rolling year because especially I'm like we're living in dog years now with AI. I'm like anything outside of a year is just crazy talk, but I don't know. I forget what your fiscal is. We're so Q4 heavy in terms of our revenue that we have got to be especially where we are right now, in the calendar year, we've got to be talking a lot about Q4 and minimizing as much Q4 risk as possible because that runs through February or into Jan. \
+\
+32:07 | Danny\
+What's your ratio of CSM to accounts? \
+\
+32:11 | Brent\
+So on our strat like named, it's no more than five. And then on our scaled, it's closer to 50 50 to 60. \
+\
+32:22 | Danny\
+Got it. And. \
+\
+32:23 | Brent\
+That's more of our, I mean that's much more of a reactive motion et cetera. And Danny, what I'll tell you is we have an 80 20 business and where we're seeing most of our grr risk is on that long tail. And so that's where I really am looking at. I mean, we're all part of the same family. I've got EBITDA constraints so I can't throw a lot of bodies at our scaled business. And so a lot of what we're doing right now is more, it is more reactive. But the reality is I can lose a decent amount of those customers and still have good grr where I've got to put a lot of my resources on the high end. So that's where I'm working a lot with Ori and prim and where we're developing more of the proactive agent motion to try to offset some of that, those challenges that we have on our scale team. What we've done, I think you guys have it too. Just real quick. We built an onshore team in Mexico City where you asked me about the ratios that's what the ratios look like if you look at it on a spreadsheet, the reality is those aren't assigned it's more of a pool type of model to try to ensure that customers get what they\'85 need at the right time versus just having it, you know, at a regular cadence of engagement. \
+\
+33:30 | Danny\
+Got it. And the csms, they're just looking after the health of the customer. They're not focused on the renewal, somebody else does the renewal. \
+\
+33:38 | Brent\
+Right. So, well, they have a variable comp tied to their segment grr. But from a commercial perspective, we have a renewal team that actually does the commercials, the negotiation, et cetera. But they do have a grr target for their variable comp. \
+\
+33:55 | Danny\
+Got it. And then for those larger customers, well, the scaled and the named, do you also have dedicated people in support like technical account managers? \
+\
+34:04 | Brent\
+Yeah. So basically, it's a pod model. So you have a strategic ae, you have the CSM, and then you also have a premier support rep and that's also where we have different components based off of the cohort and what their tech stack looks like, that they've purchased, what kind of also professional service type of support they have, but that's more of a named pod model got. \
+\
+34:25 | Danny\
+It. Got it. So then what are these agents then that you're building or that you've built that Prem and Ori have built for scaled and named customers. If you have a pod with humans that are serving the customers, what does the agent do on top of that? So. \
+\
+34:41 | Brent\
+Where the pod exists that's not where the agents are focused, the agents are focused more on like I use scale and long tail interchangeably when it comes to that segment? \
+\
+34:51 | Danny\
+Yeah. So the. \
+\
+34:52 | Brent\
+main one right now is around the renewal agent. And so most of these commercials, I mean, a lot of these contracts in all reality should be more on auto renew. And so that is where we're working to get 120 days out, start that renewal process. Have that be ran by an agent. And then where we are starting to have challenges within those negotiations that, that's what would then trigger to the actual renewal manager and bring in a human? \
+\
+35:20 | Brent\
+It's all servicing right now, more of that high ratio where we don't have the human capital luxury to throw out these accounts and we need to use technology. Got it. \
+\
+35:32 | Danny\
+Did you build the renewal agent yourself in house or is it a third party tool that you're using? \
+\
+35:38 | Brent\
+That's us. \
+\
+35:39 | Prem\
+It's our product that we sell. Okay. So this is just so we don't have a traditional long tail because our business is heavy towards the enterprise and even our long tail is probably enterprise for a lot of our customers. So we had to, we took a, it needs a little bit more tuning for make it work for us. But for most of our customers, it works very well. I would say in the, if you're under like 20 K a year, we have seen it work well. So we have deployed it with like we've got four plus customers now that are using it, I mean. \
+\
+36:15 | Brent\
+You guys are in the family like we have like 2000 customers just to give you like a sense of like again to Prem's point. It's not the traditional long tail of like an Okta, that has a ton of, you know, monthly subscribers. \
+\
+36:28 | Danny\
+Yeah, we, yeah, we have a lot more, we have over 200,000 direct and indirect customers. Plus if you add in additional customers on some of our platforms, it's over a 1,000,000. So we have, think of us in the hundreds of thousands range. \
+\
+36:45 | Prem\
+What's your average asp for the, for whatever you think of as long tail? \
+\
+36:52 | Danny\
+What is it, Liz, about 10 or less well? \
+\
+36:55 | Liz\
+What would you consider a long tail? I know the asp across the entirety of the base is 16, but, you know, again, it depends on, you know, distribution and we've got a lot of customers in that mid tier segment and a lot then down market. But asp has been hovering around 16. And Adam, if I got that number wrong, that's the last one I saw. \
+\
+37:17 | Adam Staelin\
+Yeah. And I have a question you brought up as it relates to GR, we lose some GR out of the gate, right? And, you know, from basically time to sell until year one where they either don't find the value, didn't know they bought something things like that. And you mentioned, I think Brent about using gains during the onboarding process and I don't know if we really do, and that's a, that is an area. I think we can improve our GR. How are you utilizing it during that early stages of the customer? No. \
+\
+37:52 | Prem\
+I was just, go ahead Brent, no, go ahead. No. I was just mentioning that the way we look at post sales and where a non product out of band product motion can help are in three places which is getting them onboarded, maintaining them at a good health score, so that you have a good chance of moving them out of that phase, so that they don't fail because of that. Then you handhold them, try to move them along using an adoption motion. So you improve their health score. And then by then you have enough survivors left on the renewals, so that you run a renewal motion, they may not be exactly healthy but you at least get them for another year. So, when we started trying to build these agents when the technology was just starting, everybody just pounced on renewal because they're like, well onboarding is still those customers just signed up. So, can you help us save the ones that are going to leave? So we started with renewals. So that's what we have. Now we don't have a specific product that's built for onboarding. We are working on it. So that's a new product where you basically can define a motion\'85 where this is specifically for customers like yours where we have heard that you acquire customers really fast, but you lose them in the first three to six months either from a trial to a full signup or they sign up and they don't complete their onboarding fully. I don't know Uri, if there's anything that we can do. \
+\
+39:30 | Adam Staelin\
+Actually, can I take the conversation? \
+\
+39:32 | Ori\
+One step back for a minute because I think maybe this is Liz, Danny, Adam, when you say there's a value problem, what are you hearing from your customers? Can we just go to the cores? Because I think we're jumping to a solution. I don't know that I have a good understanding of the problem. \
+\
+39:49 | Prem\
+Adam? \
+\
+39:49 | Liz\
+You can jump in here because you have these conversations, I can give the, yeah. \
+\
+39:53 | Adam Staelin\
+I think it's twofold. I mean, the reality is, I mean, avalara is obviously not the cheapest in the industry and so we get shocked for sure. So when I say value, I mean, some people say you're more expensive than somebody who I think can do the job. And the truth is for some customers, we're overkill like we don't they don't have the complexity that we can handle. And I think we frankly struggle with that pricing model and how to justify a Mercedes to somebody who needs a fiat, right? I mean, we do have that inherently. But I also think that there\'85 is a, we sometimes don't show the customers how to get full value out of the product and, you know, we've got some newer products whether it be ap or atr and maybe it's sold and that looks shiny and new. And they haven't really then we don't do a good enough job integrating that into their day to day life, right? And so they're like, yeah, well, actually it was shiny and new, but I didn't really use it. So we don't get them to make it part of their day to day. And that's also where they don't see value because they're not using it. So, I think it's twofold. It's price and it's also just using it, I. \
+\
+41:06 | Liz\
+Also think that when we go through the sales motion which sometimes can be lengthy. Sometimes it's really quick. We have the ability and we do. And now with AI, we have it even more to capture the reasons for purchase, right? It falls into one of four boxes and sometimes four of four. What we don't do well, but we're working on is taking the, why did you buy? What was the value driver? And then giving them proof points like, hey, at the midpoint here's, all the stuff we're doing for you. And this is matching up with the reason you purchased. And then, you know, when it comes time for that renewal to do the same thing especially in the low end to do that in an automated way, you can use agents for that. So, I know we've got, you know, work in flight to do that. But then for the high end to say, hey, let me just bundle up this, you know, one sheet or for you, but let me give you the business review so that this decision is really easy when your CFO is hammering on you for, you know, hey, you've got five different apps and we need to reduce all the things you said which are all true for customers that decision becomes really easy. Like do not rip and replace like this product gives us accuracy and reliability. The first two things in tax, you gotta get right? It's gotta be right and it's gotta be right every time. So I don't have to worry about it. I don't have to come back in here, mr and mrs CFO and tell you omg we are, you know, we're screwed. We had a really big tax compliance issue. It's going to cost us money. Nobody ever wants to do that right into their CFO's office. So better is to say, hey, not only did that not happen but here's all the time saved money saved here's. You know, here's, what getting it right really meant. The tough part about tax compliance is it doesn't add to the bottom line but it can sure contract when you get it wrong. But there is a cost to that for businesses. You've got to hire the cpa like person. Sometimes you hire whole tax departments. We know that when the customers buy, are you an SMB? And, you know, you've got Sally or Bob that no longer you don't need them, you know, or you've got 10 or 100 people and maybe you are able to reduce 50 by investing right your 20 or 50 or 500,000 dollars with avalara, whatever it is. We don't do a great job across the mass of our customer segment at saying reason for purchase here's, the value you got and AI could really help us with that. And. \
+\
+43:26 | Ori\
+when you do, is there a segment that you're successfully doing that? Like do you have that data point where, you know, that there's that's a right kind of solution? \
+\
+43:35 | Liz\
+The focus has been on the upper. So, you know, I would say, you know, customers, not our ARR, but customers whose revenue is 500,000,000 and above. We're doing that more consistently and seeing better results. We're capturing that better up front and we're realizing that on the back end but, you know, we have a, we have fewer customers in that space more that come down, you know, in the lower segments that we should be doing that for and, we're not giving it to them, you know, in the depth that they want and need when they need it. But it's also not coming as a single one pager where decision makers like, yeah, easy got it. Like do that and maybe buy more. \
+\
+44:13 | Ori\
+Absolutely. And right now, how are you capturing those conversations? Those early, you know, those early sales or onboarding conversations? Are you like, are you using any technology to capture them? \
+\
+44:25 | Liz\
+Gone, yeah, it's all been gone. \
+\
+44:26 | Ori\
+And what happens with that data? Like can somebody Walkme through? Like, how is that used? \
+\
+44:32 | Liz\
+Shahan, you're probably best, I know they use it. Like when I think about the example I just gave the ability to capture that, I don't know if that's stitched yet, right programmatically into GainSight that says, hey, on this page, we show up and here's your four out of four Adam, maybe, you know, that would be one thing I would expect. But beyond that, you know, I'm not a super user of Gong and nor am I involved on the back end of that process. \
+\
+44:58 | Adam Staelin\
+Yeah, we use. Gong is a big piece. We get a ton. We use it kind of hunt and peck for sure in terms of getting, you know, transcripts and history and things like that. But it's also Cassie, when we build, we use a lot of that for, you know? \
+\
+45:20 | Adam Staelin\
+Customer words are probably my best leading indicator, right? And so we've been leveraging it a lot. I think there's still some connection to things that we're still working on Cassie help me on this. But what we're trying to use as much of that actual conversation as possible and that's kind of what I asked about the onboarding because, you know, as we, those are key indicators of if they're finding value. And so. \
+\
+45:47 | Ori\
+Okay. So a customer, you know, buys the product, you know, they express the reasons, right? Compliance, accuracy, maybe savings, I don't know, but that's kind of how well that's kind of what I look at when I'm doing taxes, right? Like everyone. And then, and then, you know, we start you onboard by the way icp sounds like, you know, you're icp is probably the bigger the better, right? Just because, and by the way we have a similar problem with GainSight, right? A very small company might not be the best match for GainSight because we have a lot of capabilities similar to you guys. A lot of integrations, a lot of data set up could be a little bit longer than some, you know, in your world, I mean it could be some simple tax software. But so you capture the Gong conversations, it sounds like somewhere along the way that data is sitting, I mean, it's captured but it's not fully utilized. I would. \
+\
+46:43 | Liz\
+Say, not fully utilized. I think made available\'85 Shahan, Danny, you may tell me we're farther along than what I think we are, but the idea is, of course, provide that to number one, the salesperson has it, they know it, it's in Gong. Two people now need to know this thing, the cam that the account's going to be assigned to. So our account manager except for in the upper end where they stay with the salesperson, but they need to know it and it needs to show up in the application they live in. It's gotta be in GainSight, right? So show me that number two, regardless of how the customer is implementing through partner through us on their own, right? All of those are possible absently on their own right, it should be available to us as an implementation person right here's, what the customer bought here's, what they're implementing and here's why they bought the product. So that needs to show up in the system of record that person lives in, that's Salesforce, they're not operating in GainSight. So that Gong information needs to funnel one way or another to the environment that person lives in Salesforce. And I think we found a way to do that. I don't know if it shows up and then you think about the rest of the customer life cycle. So, anybody else who's going to touch that customer needs to know that thing that becomes valuable to them at the point in time that they raise their hand and have a support issue at the point in time they're thinking about adding on another product and, or they've got dissatisfaction with the product and, or we potentially want to expand their knowledge base all the way to the point in time that they renew. So where that data shows up, CX ERS, got mentioned data intelligence layer bringing all signals together including ones coming from GainSight. Believe that I know that it lives there. And then we use that for sentiment and other things. But I believe it could also be piped and Shahan, I'm going to hand it to you to say, yes, it is or no, it isn't in specific instances showing up as a here's, the four out of four value drivers. It shows up in GainSight. It shows up in Salesforce in a very specific unique way. I don't know the answer to that. \
+\
+48:46 | Ori\
+And just a follow up question. How do you know when you're delivering value? Okay, you heard what the customer wants from you? Do you know, like do you have some clear signal from your own usage that you are like we have? And this is again, some of the data analysis that we've done. It's understanding that customers that are successful quote unquote, are using certain types of features at certain types of cadences, you know, with certain. So do you have that description in house? \
+\
+49:15 | Liz\
+Yeah, yeah, we do. Okay. \
+\
+49:17 | Ori\
+And that's is that something that you do an analysis ongoing? Or is that like a data science team that did this? Or how did you, how did you get to that analysis? \
+\
+49:24 | Liz\
+We do that ongoing part of that is going to lean into both the operational metrics of, hey, a customer who looks and does or the absence of these things looks to be healthy and is therefore has a high likelihood to renew. And we're getting more of that. So, I would say, you know, we've had a thing for a really long time. Our CPO index customer pissed off is all of those pieces they're paying their bill on time. Their usage is in line with their tier and, or they're growing. They have a certain number of cases. Those cases are being resolved quickly because we're in the tax space. We deal with notices things like of that nature, right? That are more operational. And now we also will, we now have broader access to things that can more holistically put together a picture which is what the CX 360 engine does for us and saying, yeah, like healthy customer looks like this, but that's continuing to evolve. But yeah, we have the baseline for that and some of that's product by product specific, you can imagine. Ori? \
+\
+50:24 | Ori\
+How do you do it in GainSight? Yeah. So we ran kind of a deep data analysis. We also have kind of our own machine learning model that we, you know, we could talk about, you know, it's more like a service than a SaaS solution because it tends to get very bespoke and it needs a lot of like manual work. You know, it's not like you can a turnkey solution to do kind of a like a churn analysis or a predictive model that looks at all your feature uses all your telemetry and tries to either analyze historically or predict, tends to be a little bit of a heavy on the service side. We are working right now on productizing something like that. And once again, it's becoming more I think feasible and acceptable because as I said earlier, we're moving into kind of I think a reality where, you know, the services component of the SaaS offering is more acceptable because of just what's happening, the changes that are happening in the industry. So, you know, we're happy to connect. I don't know if you have a data science team that's doing this analysis on your end or, you know, I'm happy to do as a follow up, we can sit together with the team. If you feel confident that you have that understanding, it sounds to me like on one hand, you've captured the expression, the intent of the customer. On the other hand, you have a good understanding of what a good customer looks like or those risk signals. It sounds like it's more an operationalizing of expressing to those customers that are not or pushing them to adopt certain features. Would that be? Yeah. \
+\
+52:05 | Danny\
+Yeah. I think we do a really good job determining when we have a problem, when we are able to find the signals in all of the systems really easily. I'd love to get our data science team to sit with you or somebody in your team to just understand how you're measuring the value that you're delivering to a customer because we're looking to figure out how we could do that automatically for those smaller customers? How could we give them a report once a month? Once a quarter to show them the value that they're getting from our products today or value they're not getting from a product that they've paid money for? \
+\
+52:41 | Brent\
+So the value that we've been, I was going to say one thing that I've been doing is with the release like and I think, I mean, I was hoping, I know we only have eight minutes, show you a little bit of staircase. But one thing that we've been doing is because we rolled out Claude organizationally, staircase has an MCP in the Claude. So this is Danny the first step of what's allowing us to start creating some of these value assumption conversations. Now, what we don't have yet transparently is it's not automatically pushing at a regular cadence for that long tail part of the business yet. But I mean, I'm happy to jump in and show you what we're doing. That's like one area of where we're starting this because staircase brings in telemetry data, transcript, data, email, data, support, ticket data. So then in external information as well to start to create these assumptions cool. \
+\
+53:30 | Danny\
+Could you show us in the last few minutes? Could you show us staircase? \
+\
+53:33 | Brent\
+Yeah, for. \
+\
+53:35 | Shahan\
+This team we're looking to actually integrate GainSight with glean. We use glean company wide. Oh. \
+\
+53:40 | Brent\
+Nice. And. \
+\
+53:41 | Shahan\
+Just a native connector to GainSight. So we don't have staircase, but that'll at least allow us to get the rest of the GainSight data into glean. \
+\
+53:49 | Brent\
+Here, I'll show you this real quick. So the first part when it comes to staircase for me, how I usually start, I'm just gonna show you guys all real information. You're first looking at my slack, this could also be teams, but because we're getting these signals, it can also push to notifications in slack channel. This is a negative one. You can see it's a customer about a renewal. But if this was a customer having a positive outcome, this can go into the specific customer channel. And this is really what creates the workflow for the team as a starting point. So just one thing I think is critical when you're thinking about upsell opportunity, I heard that earlier pushing to these specific channels. This is more for your bigger customers. You get those insights via staircase. So now you're looking at staircase and I'm just going to go pretty quick. I'm just showing you. I mean this is the way that we look at you all you can see the health isn't great. We're in this reevaluation phase, we can see where we have some adoption challenges, strategic fits, being assessed, value proof is the priority. Again, there's some irony in what we're talking about. But this is basically pulling from again call transcripts, emails between us and your team support tickets as well as that telemetry data. What this also though you can go in and this is where you can start to get more of that risk analysis. So as soon as risk or signals, staircase will automatically start to create this risk assessment and we can start to dig in and then understand where is it pulling this assessment? So these are actually quotes that came out of either emails or calls that are signaling where we have this risk. Oh, and here, sorry, guys, I just realized I wasn't full screen. This is where you can start to see where it's pulling these risks and why any of these, you could double click in and you could see this was based off of this call and it will pull from that component. What it will also do is also trigger where we have some expansion opportunities. So same thing on the positive side, it will start to pull where we have that positive sentiment. Where do we have upsell opportunity\'85 that's the product? Yeah? \
+\
+55:57 | Ori\
+Sorry? \
+\
+55:57 | Brent\
+I'm demoing in front of the. \
+\
+55:59 | Ori\
+Camera. No, no, no, it's great. It's great just to kind of give you a sense of kind of what's happening behind the scenes here is by the way we connect to Gong. So we'll pull the Gong transcripts. The thing is we'll also look at emails and we'll also look at support tickets. And we also have a deep understanding of what sentiment means in the post sales world, what churn is and so on and so forth. \
+\
+56:22 | Danny\
+On the. \
+\
+56:22 | Ori\
+risk analysis and the expansion analysis, what we're doing is we're looking at we're looking at, you know, I would say characteristics of other accounts that had challenges and therefore churned or expanded and kind of think about it like lookalikes in the marketing world. So, it's a pretty advanced technology that looks to see, you know, if there's an opportunity here based on historical, you know, success or if there's risk here based on historical risk that happened. And this is obviously looking at all the data, you know, about a year worth of data back. And Dana, I think you asked something on the data science thing. One thing that we cut like on our prediction side, we don't look at the last like the three months before the event before the renewal or whatever it is. We actually don't look at it because it has a bias. From a data perspective. It's kind of like a survival bias where it will skew right? Like if a customer is going to churn, they're not going to use your product a month or two before. So it kind of skews the whole model. So you want to look at the data probably six months before the renewal date, or nine months before, sorry, up to six months before, or up to about three months before. But I wouldn't touch. I wouldn't really look at data three months beyond that because, and also there's probably not a lot you can do at that point got. \
+\
+57:42 | Danny\
+It, that helps a lot. And then. \
+\
+57:46 | Brent\
+Just a couple of minutes. So you can see like when you guys were asking that question earlier, actually, I'm like what's the brzee value that they're receiving? You see I did this 30 minutes ago. So this again pulled from our internal slack channels call transcripts et cetera. I mean you guys brought up CX 360 a couple of times after I pulled this. So it felt like it was relatively accurate. This is where now what we're doing, Danny is taking this and then with the CS team then starting to put together decks et cetera, for the team for these assumed conversations? \
+\
+58:19 | Danny\
+Who typically uses, yeah, who's the user in the company for staircase? So we have our cams using GainSight. Would the cams be using staircase? Would it be cam managers? \
+\
+58:32 | Brent\
+Well, I'll start then typically Danny, I'm saying, I think it's more leadership and frontline managers. Your ics do get value out of especially when you have multi product ics. The thing is that I hear from my team a lot is they know a lot of the things that are in there. And so though it's valuable, most of the unlock is at the leadership level from frontline and up because what you can also do with this MCP is you can start to do more around capacity planning. This is also where I can start to take cohorts of trends because you can start to bucket, what are topics, what are things being discussed? And then what are the outcomes tied to it? So if there are certain things discussed that lead to outcomes like risk within a renewal, upsell cross sell that's where, then I can start to run different playbooks or engagement models for different parts of the business. So. \
+\
+59:24 | Ori\
+I know we have one minute, I just want to say one thing Danny, first of all, it's integrated into CS so you can see all the data from staircase in CS and the CS product as well. I do think it might be, since we are running these fde motions, it might be worthwhile to sit together and think how we can help you with that value. The value. I don't know the right verb here, but the value expression to your customers, closing that loop, basically looking at the signal inside that you collect during the onboarding or during the sales, looking at the signal that you have about the value that, you know, from your platform or at least the usage. We can translate usage into value and then automating that back to the customer through CS. And this could be a bespoke project that we could run together. I don't know Brent if you wanna, we can pull in our team, our josh's team and we could talk about that. It might not need like development, but just on the professional service side, we could write some scripts or some code to help you kind of close that loop and start to automate that feedback to your customer base. \
+\
+1:00:32 | Danny\
+I think it would be good for you to come in and have the conversation. I know Liz is driving it internally with some other stakeholders and our data engineering team. So I think that would be a useful thing to do. Yeah, because. \
+\
+1:00:45 | Ori\
+we're happy to, you know, if it's something that we, it sounds like the problem is more operational. It sounds like the data is sitting in mostly right places. We can start to experiment and work with you on that. And it's also an area that's interesting for us. Right? Value is an important one, not only, you know, for you as a customer, but for many of our customers. So we can help and help with that. I think that'll be useful for both sides. \
+\
+1:01:08 | Danny\
+What is the Shahan, do we have access to the renewal agent that they built? I don't believe so. No. \
+\
+1:01:15 | Ori\
+No, it's not that, I mean, Prem can talk, you know, about that as well, but it's not, we would have to kind of bring in a team and it's a, that's an fde motion because it's not like a just a turnkey solution. \
+\
+1:01:30 | Danny\
+Okay. Maybe if we could in a follow up, have a double click on the renewal agent and then have a double click on how we could work together on the value\'85 report though. I guess we could produce, yeah, I've got. \
+\
+1:01:46 | Michelle\
+Both of those and I've got Ori, connecting with your data team as well. So I'll take all that away and follow up. And Danny or anyone else if you want to dive deeper into staircase, we can set that up too in a separate session. I think additionally if we could make bring these teams together for a recurring call just to check in, have more conversations like that. That'd be something I'd love to get on the calendar as well. \
+\
+1:02:12 | Danny\
+Yeah, would love to do that. Okay? \
+\
+1:02:14 | Michelle\
+Awesome. All right. I'll come and follow up. So, thank you guys for your time today. Thank you guys. \
+\
+1:02:19 | Ori\
+Thank you. Thank. \
+\
+1:02:21 | Brent\
+You. Thanks see, y'all. }
