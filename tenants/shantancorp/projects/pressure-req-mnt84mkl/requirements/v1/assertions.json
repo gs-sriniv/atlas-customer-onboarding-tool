@@ -1,0 +1,28 @@
+[
+  {
+    "id": "c:grr:1",
+    "text": "GRR is 92%",
+    "theme": "Financial Metrics",
+    "type": "metric",
+    "confidence": "high",
+    "sources": [
+      {
+        "file": "notes.txt",
+        "quote": "GRR of 92%"
+      }
+    ]
+  },
+  {
+    "id": "c:nrr:1",
+    "text": "NRR is 108%",
+    "theme": "Financial Metrics",
+    "type": "metric",
+    "confidence": "high",
+    "sources": [
+      {
+        "file": "notes.txt",
+        "quote": "NRR of 108%"
+      }
+    ]
+  }
+]
