@@ -97,3 +97,7 @@ _Follow-up tasks for the CSM or customer._
 - **grr_nrr**: {"grr":78,"nrr":null}
 - **team_size**: 7
 - **primary_use_case**: Automate renewal email replies to reduce manual workload and improve gross revenue retention from 78% to 80%.
+
+### 2026-04-10 — Data & security
+- **data_sources**: [{"name":"Gainsight","usage":["email sending","timeline logging","Customer Success data"]},{"name":"Salesforce","usage":["Account Executive tracking","renewal opportunity tracking"]},{"name":"SendGrid","usage":["contract attachments"]},{"name":"Clary","usage":["contracts"]},{"name":"Snowflake/Databricks","usage":["data layering"]},{"name":"Matic","usage":["personalization"]},{"name":"Staircase","usage":["health signals"]}]
+- **compliance**: {"regulations":["GDPR"],"ai_disclosure_required":true,"ai_disclosure_policy_in_place":true,"customer_preference_management":null,"preference_data_integrated_in_suppression_lists":null}
